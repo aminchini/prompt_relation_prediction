@@ -71,7 +71,7 @@ for triplet_batch in tqdm(triplet_batches):
     time.sleep(19)
 
 results = []
-for i, ge in enumerate(generated_entities2):
+for ge in generated_entities2:
     # Extract the array from the text
     start_index = ge.find("[")
     end_index = ge.find("]")
